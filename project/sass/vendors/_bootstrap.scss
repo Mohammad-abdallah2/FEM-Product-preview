@@ -1,0 +1,50 @@
+@import "../abstracts/media-query";
+@import "../abstracts/variables";
+
+@include media-md {
+  body {
+    padding-inline: unset;
+  }
+
+  .product-card-main {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    margin-top: $mt-unset;
+    margin-bottom: $mb-unset;
+
+    picture {
+      .product-img{
+        display: flex;
+        max-width: 300px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 10px;
+        margin-bottom: unset;
+        filter: brightness(90%);
+      }
+    }
+
+    .main-card {
+      padding: 30px 30px 0 30px;
+
+      .product-card-sub-title {
+        max-width: 210px;
+        line-height: $line-height-35;
+      }
+
+      .product-card-desc {
+        max-width: 225px;
+      }
+
+      .product-card-price {
+
+        .new-price {
+          margin-inline-end: $me-30;
+        }
+      }
+    }
+  }
+}
+
+
